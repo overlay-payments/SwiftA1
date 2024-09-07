@@ -11,6 +11,12 @@
 		27FC7AAE2C8CEB680026D040 /* SwiftA1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FC7AA32C8CEB680026D040 /* SwiftA1.framework */; };
 		27FC7AB32C8CEB680026D040 /* SwiftA1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC7AB22C8CEB680026D040 /* SwiftA1Tests.swift */; };
 		27FC7AB42C8CEB680026D040 /* SwiftA1.h in Headers */ = {isa = PBXBuildFile; fileRef = 27FC7AA62C8CEB680026D040 /* SwiftA1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27FC7ABF2C8CEB8B0026D040 /* SwiftCBOR in Frameworks */ = {isa = PBXBuildFile; productRef = 27FC7ABE2C8CEB8B0026D040 /* SwiftCBOR */; };
+		27FC7AC72C8CECE20026D040 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC7AC02C8CECE20026D040 /* Extensions.swift */; };
+		27FC7AC82C8CECE20026D040 /* InitiationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC7AC12C8CECE20026D040 /* InitiationCommand.swift */; };
+		27FC7ACA2C8CECE20026D040 /* InitiationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC7AC32C8CECE20026D040 /* InitiationResponse.swift */; };
+		27FC7ACB2C8CECE20026D040 /* KickoffCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC7AC42C8CECE20026D040 /* KickoffCommand.swift */; };
+		27FC7ACC2C8CECE20026D040 /* CBORSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC7AC52C8CECE20026D040 /* CBORSequence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,11 @@
 		27FC7AA72C8CEB680026D040 /* SwiftA1.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftA1.docc; sourceTree = "<group>"; };
 		27FC7AAD2C8CEB680026D040 /* SwiftA1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftA1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FC7AB22C8CEB680026D040 /* SwiftA1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftA1Tests.swift; sourceTree = "<group>"; };
+		27FC7AC02C8CECE20026D040 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		27FC7AC12C8CECE20026D040 /* InitiationCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitiationCommand.swift; sourceTree = "<group>"; };
+		27FC7AC32C8CECE20026D040 /* InitiationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitiationResponse.swift; sourceTree = "<group>"; };
+		27FC7AC42C8CECE20026D040 /* KickoffCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KickoffCommand.swift; sourceTree = "<group>"; };
+		27FC7AC52C8CECE20026D040 /* CBORSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBORSequence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FC7ABF2C8CEB8B0026D040 /* SwiftCBOR in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +83,11 @@
 		27FC7AA52C8CEB680026D040 /* SwiftA1 */ = {
 			isa = PBXGroup;
 			children = (
+				27FC7AC12C8CECE20026D040 /* InitiationCommand.swift */,
+				27FC7AC32C8CECE20026D040 /* InitiationResponse.swift */,
+				27FC7AC42C8CECE20026D040 /* KickoffCommand.swift */,
+				27FC7AC52C8CECE20026D040 /* CBORSequence.swift */,
+				27FC7AC02C8CECE20026D040 /* Extensions.swift */,
 				27FC7AA62C8CEB680026D040 /* SwiftA1.h */,
 				27FC7AA72C8CEB680026D040 /* SwiftA1.docc */,
 			);
@@ -113,6 +130,9 @@
 			dependencies = (
 			);
 			name = SwiftA1;
+			packageProductDependencies = (
+				27FC7ABE2C8CEB8B0026D040 /* SwiftCBOR */,
+			);
 			productName = SwiftA1;
 			productReference = 27FC7AA32C8CEB680026D040 /* SwiftA1.framework */;
 			productType = "com.apple.product-type.framework";
@@ -162,6 +182,9 @@
 				Base,
 			);
 			mainGroup = 27FC7A992C8CEB680026D040;
+			packageReferences = (
+				27FC7ABD2C8CEB8B0026D040 /* XCRemoteSwiftPackageReference "SwiftCBOR" */,
+			);
 			productRefGroup = 27FC7AA42C8CEB680026D040 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -194,7 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FC7AC82C8CECE20026D040 /* InitiationCommand.swift in Sources */,
+				27FC7ACB2C8CECE20026D040 /* KickoffCommand.swift in Sources */,
 				27FC7AA82C8CEB680026D040 /* SwiftA1.docc in Sources */,
+				27FC7ACA2C8CECE20026D040 /* InitiationResponse.swift in Sources */,
+				27FC7AC72C8CECE20026D040 /* Extensions.swift in Sources */,
+				27FC7ACC2C8CECE20026D040 /* CBORSequence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +439,7 @@
 		27FC7ABB2C8CEB680026D040 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3R44BTH39W;
@@ -427,6 +456,7 @@
 		27FC7ABC2C8CEB680026D040 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3R44BTH39W;
@@ -471,6 +501,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		27FC7ABD2C8CEB8B0026D040 /* XCRemoteSwiftPackageReference "SwiftCBOR" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/valpackett/SwiftCBOR";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		27FC7ABE2C8CEB8B0026D040 /* SwiftCBOR */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27FC7ABD2C8CEB8B0026D040 /* XCRemoteSwiftPackageReference "SwiftCBOR" */;
+			productName = SwiftCBOR;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 27FC7A9A2C8CEB680026D040 /* Project object */;
 }
